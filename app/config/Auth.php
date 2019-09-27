@@ -1,0 +1,10 @@
+<?php
+session_start();
+if(!isset($_SESSION['nik'])){
+	header("location:login.php");
+}else{
+	if(!isset($_GET['page'])){
+		header("location:".$base_url."Dashboard");
+	}
+}
+?>

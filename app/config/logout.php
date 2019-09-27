@@ -1,0 +1,10 @@
+<?php
+	$base_url='http://localhost/ujikompetensi/';
+	session_start();
+	unset($_SESSION['nik']);
+	unset($_SESSION['nama']);
+	unset($_SESSION['jabatan']);
+	session_unset();
+	session_destroy();
+	header("location:".$base_url."login.php");	
+	exit;
